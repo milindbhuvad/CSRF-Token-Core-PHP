@@ -17,7 +17,7 @@ require_once __DIR__ . '/functions.php';
     </style>
 </head>
 <body>
-    <h1>Core PHP CSRF Token Example</h1>
+    <h1>Core PHP CSRF Token Example1234</h1>
     <p class="note">This example uses a hidden field token stored in session and validated on form submit.</p>
 
     <form action="submit.php" method="post">
