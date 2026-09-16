@@ -1,0 +1,23 @@
+name: PHP CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  php-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check PHP version
+        run: php -v
+
+      - name: Check PHP syntax
+        run: |
+          php -l index.php
+          php -l functions.php
+          php -l submit.php
